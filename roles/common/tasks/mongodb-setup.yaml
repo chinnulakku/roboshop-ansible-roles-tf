@@ -1,0 +1,21 @@
+  ansible.builtin.package:
+    name: mongodb-org-shell
+    state: present
+
+- name: "get the {{component}} entries count"
+  ansible.builtin.shell: mongo --host mongodb.sudhaaru676.online --quiet --eval 'db = db.getsiblingDB(catalogue"); db.products.count()'
+  register: entries_count
+  when: component == "catalogue"
+
+- name: "get the {{component}} entries count"
+  ansible.builtin.shell: mongo --host sudhaaru676.online --quiet --eval 'db = db.getSiblingDB("user"); db.users.count()'
+  register: entries_count
+  when: component == "user"
+
+- name: print the count"
+  ansible.builtin.debug:
+    msg: "entries count: {{component}}"
+
+- name: "load {{component}} data"
+  ansible.builtin.shell: "mongo --host mongodb.sudhaaru676.online < /app/schema/{{component}}.js"
+  when: entries_count.stdout == "0" # keep double quotes

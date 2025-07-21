@@ -1,0 +1,10 @@
+MONGODB_HOST:mongodb-prod.sudhaaru676.online #submit your host
+REDIS_HOST:redis-prod.sudhaaru676.online
+MYSQL_HOST:mysql-prod.sudhaaru676.online
+RABBITMQ_HOST:rabbitmq-prod.sudhaaru676.online
+CATALOGUE_HOST:catalogue-prod.sudhaaru676.online
+USER_HOST:user-prod.sudhaaru676.online
+CART_HOST:cart-prod.sudhaaru676.online
+SHIPPING_HOST:shipping-prod.sudhaaru676.online
+PAYMENT_HOST:payment-prod.sudhaaru676.online
+DISPATC_HOST:dispatch-prod.sudhaaru676.online

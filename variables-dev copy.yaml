@@ -1,0 +1,10 @@
+MONGODB_HOST:mongodb-dev.sudhaaru676.online #submit your host
+REDIS_HOST:redis-dev.sudhaaru676.online
+MYSQL_HOST:mysql-dev.sudhaaru676.online
+RABBITMQ_HOST:rabbitmq-dev.sudhaaru676.online
+CATALOGUE_HOST:catalogue-dev.sudhaaru676.online
+USER_HOST:user-dev.sudhaaru676.online
+CART_HOST:cart-dev.sudhaaru676.online
+SHIPPING_HOST:shipping-dev.sudhaaru676.online
+PAYMENT_HOST:payment-dev.sudhaaru676.online
+DISPATC_HOST:dispatch-dev.sudhaaru676.online
